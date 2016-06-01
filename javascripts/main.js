@@ -4,6 +4,6 @@
 	function changeBgImg(){
 	bj="http://haocity.top/img/bj@"+Math.round(Math.random()*2000)+".jpg"
 	 console.log(bj);
-	document.getElementById("body").style.backgroundImage = "url("+bj+")";
+	document.getElementById("oneimg").style.backgroundImage = "url("+bj+")";
 	 }
 
