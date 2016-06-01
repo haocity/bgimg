@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HAOTOWN一图 背景图</title>
+		<style>
+		#body{
+			background: url(img/bj@1.jpg);
+			background-size: cover;
+   			background-repeat: no-repeat;
+    		background-attachment: fixed;
+    		font: "微软雅黑";
+		}
+		
+		</style>
+	</head>
+<body id="body">
+<div class="main">
+	<h1>完善中--尽请期待</h1>
+	
+</div>
+
+<script language="javascript" type="text/javascript">
+
+	changeBgImg();
+	setInterval(changeBgImg,30000);
+	function changeBgImg(){
+	bj="http://haocity.top/img/bj@"+Math.round(Math.random()*2000)+".jpg"
+	 console.log(bj);
+	document.getElementById("body").style.backgroundImage = "url("+bj+")";
+	 }
+
+
+</script>
+
+
+	</body>
+</html>
