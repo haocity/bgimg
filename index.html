@@ -45,13 +45,28 @@
 
 <p>壁纸地址 http://haocity.top/img/bj@壁纸编号.jpg<br />
 你也可以使用JavaScript代码 可以替换ID为 oneimg的backgroundImage<br />
-<code> function changeBgImg(){
-	bj="http://haocity.top/img/bj@"+Math.round(Math.random()*2000)+".jpg";
-	document.getElementById("oneimg").style.backgroundImage = "url("+bj+")";
-	 }
+<code> 
+      //获取图片地址
+        function GetOneImg(){ 
+    OneImg="http://haocity.top/img/bj@"+Math.round(Math.random()*2000)+".jpg"
+     }
+        //更换图片
+    function ChangeOneImg(){
+    console.log(OneImg);//调试图片地址
+    document.getElementById("oneimg").style.backgroundImage = "url("+OneImg+")";
+    GetOneImg();
+    LoadImg(OneImg);//预先加载下一张图片
+     }
+     //预加载
+        function LoadImg(url) { 
+    var img = new Image(); 
+    img.src = url; 
+    }
 </code><br />
 当然 你也可以添加一个定时函数 实现自动换壁纸 别忘记了先要执行一下换壁纸操作<br />
-<code>setInterval(changeBgImg,30000);</code><br />
+<code>GetOneImg();  //获取随机图片地址
+    ChangeOneImg();//进行更换图片操作
+    setInterval(ChangeOneImg,8000);//重复更换图片</code><br />
 
 
 </p>
