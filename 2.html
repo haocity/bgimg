@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HAOTOWN一图 背景图 实例预加载+换图</title>
+		<style>
+		#body{
+			background: url(img/bj@1.jpg);
+			background-size: cover;
+   			background-repeat: no-repeat;
+    		background-attachment: fixed;
+    		font: "微软雅黑";
+		}
+		
+		</style>
+	</head>
+<body id="oneimg">
+<div class="main">
+	<h1>预加载+换图</h1>
+	
+</div>
+
+<script language="javascript" type="text/javascript">
+
+
+
+
+
+
+
+
+
+
+	GetImg();
+	changeBgImg();
+	setInterval(changeBgImg,8000);
+
+	function GetImg(){
+	bj="http://haocity.top/img/bj@"+Math.round(Math.random()*2000)+".jpg"
+
+	 }
+
+
+
+
+	function changeBgImg(){
+	console.log(bj);
+	document.getElementById("oneimg").style.backgroundImage = "url("+bj+")";
+	GetImg();
+	LoadImg(bj);
+	 }
+
+
+    function LoadImg(url) { 
+	var img = new Image(); 
+	img.src = url; 
+	} 
+
+</script>
+
+
+	</body>
+</html>
