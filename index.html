@@ -1,50 +1,36 @@
 <!DOCTYPE html>
 <html>
-
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="一图 : ">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>一图 小小的个人壁纸库</title>
-  </head>
-
-  <body id="oneimg">
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/haocity/bgimg">View My GitHub</a>
-
-          <h1 id="project_title">一图</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/haocity/bgimg/zipball/master">下载实例 .zip格式压缩包 file</a>
-              <a class="tar_download_link" href="https://github.com/haocity/bgimg/tarball/master">下载实例  a tar.gz格式压缩包 file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>一图-精美的壁纸库.</h3>
-
+	<head>
+		<meta charset="utf-8" />
+		<title>ONE IMG 一图</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body id="oneimg">
+		<div class="banner"><a href="https://haotown.cn">VIEW MY BLOG</a></div>
+		<div class="header">
+			<div class="header-main">
+		
+				<div class="title"><img src="img/logo.png" style="
+    vertical-align: middle;width: 60px;border-radius: 50%;">一图</div>
+		   
+				
+			</div>
+		</div>
+		<div class="main-wrap"><div class="main">
+			<h3>一图-精美的壁纸库.</h3>
 <p>这是公益性的壁纸库 <br />
+我喜欢经常欢壁纸 <br />
+有时候一张壁纸就能改变一个网站的风格<br />
+虽然壁纸可能有些不适合和自己的网站风格混搭<br />
 一个无聊的小作品<br />
 每个人都可以尽情的使用<br />
-现在已有2000+壁纸 <input type="submit" name="button" id="button" value="ChangeImg" onclick="ChangeOneImg()" />
-</p>
-
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>如何使用？</h3>
-
-<p>壁纸地址 https://app.haotown.cn/img/bj@壁纸编号.jpg<br />
-你也可以使用JavaScript代码 可以替换ID为 oneimg的backgroundImage<br />
+现在已有2000+壁纸 <input type="submit" name="button" id="button" value="ChangeImg" onclick="ChangeOneImg()">
+<br /></p>
+	
+<h3>如何使用？</h3>
+<p>壁纸地址 https://app.haotown.cn/img/bj@壁纸编号.jpg<br>
+你也可以使用JavaScript代码 可以替换ID为 oneimg的backgroundImage<br>
 <code> 
       //获取图片地址
         function GetOneImg(){ 
@@ -62,12 +48,12 @@
     var img = new Image(); 
     img.src = url; 
     }
-</code><br />
-当然 你也可以添加一个定时函数 实现自动换壁纸 别忘记了先要执行一下换壁纸操作<br />
+</code><br>
+当然 你也可以添加一个定时函数 实现自动换壁纸 别忘记了先要执行一下换壁纸操作<br>
 <code>GetOneImg();  //获取随机图片地址
     ChangeOneImg();//进行更换图片操作
-    setInterval(ChangeOneImg,8000);//重复更换图片</code><br />
-为了手机用户着想还可以把用以下语句判断以下<br /><code>
+    setInterval(ChangeOneImg,8000);//重复更换图片</code><br>
+为了手机用户着想还可以把用以下语句判断以下<br><code>
 if(navigator.userAgent.match(/(iPhone|iPod|Android|ios|Mobile)/i)){
      //手机用户执行代码区域
   }
@@ -77,38 +63,20 @@ if(navigator.userAgent.match(/(iPhone|iPod|Android|ios|Mobile)/i)){
         }
 </code>
 </p>
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>为什么要建立？</h3>
-<p>我喜欢经常欢壁纸  <br />有时候一张壁纸就能改变一个网站的风格<br />
-虽然壁纸可能有些不适合和自己的网站风格混搭<br />
-</p>
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>博客</h3>
+<h3>关于我</h3>
 
-<p>喜欢这个项目的可以关注我的博客<a href="https://www.haotown.cn class="user-mention">HAOTOWN</a> <br />
-	虽然自己水平很低 还有严重的拖延症<br />
-	和各位菊苣之间有很大的差距
-</p>
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>联系我</h3>
-<p>企鹅：1051667334<br />
-邮箱：UREYGT@GMAIL.COM<br />
-微博：@HAOCITY<br />
-支付宝：UREYGT@GMAIL.COM
-</p>
-      </section>
-    </div>
+<p>喜欢这个项目的可以关注我的博客<a href="https://www.haotown.cn class=" user-mention"="">HAOTOWN</a> <br>
+	虽然自己水平很低 还有严重的拖延症<br>
+	和各位菊苣之间有很大的差距<br />
+企鹅：1051667334<br>
+邮箱：UREYGT@GMAIL.COM<br>
+微博：@HAOCITY<br>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">一图  维护者 <a href="https://github.com/haocity">haocity(疯狂减肥带)</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-<script type="text/javascript" src="javascripts/main.js">
-</script>
-    
+</p>
+			
 
-  </body>
+		</div></div>
+		<div class="footer"><div class="footer-main">一图 维护者 haocity(疯狂减肥带)  2016<br />With GitHub Pages Tencent Cloud VeryCloud </div></div>
+		<script type="text/javascript" src="js/oneimg.js" ></script>
+	</body>
 </html>
