@@ -1,0 +1,84 @@
+	
+			body{
+				margin: 0px;
+				padding: 0px;
+				font-family: "微软雅黑";
+				background-size: cover;
+   				 background-repeat: no-repeat;
+    			background-attachment: fixed;
+			}
+			p{
+				margin:0px;
+			}
+			.header{
+				    background: rgba(33, 33, 33, 0.23);
+			}
+			.header-main{
+				width: 800px;
+				margin: 0px auto 0px auto;
+			
+			}
+			
+			.title{
+				    font-size: 42px;
+   					font-weight: 700;
+   				    text-shadow: #111 0px 0px 10px;
+   				    color: #FFFFFF;
+   				    padding:50px 0px 50px 0px;		
+   				   
+			}
+			.banner{
+				position: absolute;
+				top: 0px;
+				right: 20%;
+				background-color: #0090FF;
+				padding: 5px 10px 5px 10px;
+				 box-shadow: 0 0 10px rgba(0,0,0,.5);
+				 color: #FFFFFF;
+				 border-bottom-left-radius: 2px;
+   				 border-bottom-right-radius: 2px;
+   			
+				
+			}
+		   
+			.banner>a{
+			    text-decoration: none;
+			    color: #fff;
+			}
+			.main-wrap{
+				    background: rgba(242, 242, 242, 0.38);
+				        border-top: 1px solid #111;
+			}
+			
+			.main{
+			width: 640px;
+			margin: 0px auto 0px auto;
+			font-size: 1.2em;
+			}
+			input#button {
+			   background-color: #379ED0;
+			   border: 2px solid #4360A0;
+			   cursor: pointer;
+			}
+
+			code{
+	    	width: 100%;
+	    	color: #222;
+	    	background-color: #fff;
+		    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+		    font-size: 14px;
+		    border-radius: 2px;
+		    -moz-border-radius: 2px;
+    		-webkit-border-radius: 2px;
+			}
+			.footer{
+				  background-color: rgba(0, 0, 0, 0.64);
+			}
+			.footer-main{
+				width: 640px;
+				 color: #FFFFFF;
+				 padding: 30px 0px 20px 0px;
+				 margin: 0px auto 0px auto;
+			}
+			
+		
