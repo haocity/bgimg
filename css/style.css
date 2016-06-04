@@ -41,7 +41,7 @@
 				
 			}
 		   
-			.banner>a{
+			.title>a,.banner>a{
 			    text-decoration: none;
 			    color: #fff;
 			}
