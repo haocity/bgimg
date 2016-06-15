@@ -40,7 +40,7 @@
    			
 				
 			}
-		   
+		  
 			.title>a,.banner>a{
 			    text-decoration: none;
 			    color: #fff;
@@ -56,9 +56,12 @@
 			font-size: 1.2em;
 			}
 			input#button {
-			   background-color: #379ED0;
-			   border: 2px solid #4360A0;
-			   cursor: pointer;
+			    height: 24px;
+				border: 1px solid #0381AA;
+				border-radius: 2px;
+				background-color: #00A7DE;
+				color: #fff;
+			    cursor: pointer;
 			}
 
 			code{
