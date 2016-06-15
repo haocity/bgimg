@@ -8,6 +8,7 @@
 	</head>
 	<body id="oneimg">
 		<div class="banner"><a href="https://haotown.cn">VIEW MY BLOG</a></div>
+
 		<div class="header">
 			<div class="header-main">
 		
@@ -19,7 +20,7 @@
 		</div>
 		<div class="main-wrap"><div class="main">
 			<h3>一图-精美的壁纸库.</h3>
-<p>这是公益性的壁纸库 <br />
+<p>这是公益性的壁纸库 <a href="img.html">进入壁纸库</a> <br /> 
 我喜欢经常欢壁纸 <br />
 有时候一张壁纸就能改变一个网站的风格<br />
 虽然壁纸可能有些不适合和自己的网站风格混搭<br />
@@ -32,34 +33,34 @@
 <p>壁纸地址 https://app.haotown.cn/img/bj@壁纸编号.jpg<br>
 你也可以使用JavaScript代码 可以替换ID为 oneimg的backgroundImage<br>
 <code> 
-      //获取图片地址<br />
-        function GetOneImg(){ <br />
-    OneImg="https://app.haotown.cn/img/bj@"+Math.round(Math.random()*2000)+".jpg"<br />
-     }<br />
-        //更换图片<br />
-    function ChangeOneImg(){<br />
-    console.log(OneImg);//调试图片地址<br />
-    document.getElementById("oneimg").style.backgroundImage = "url("+OneImg+")";<br />
-    GetOneImg();<br />
-    LoadImg(OneImg);//预先加载下一张图片<br />
-     }<br />
-     //预加载<br />
-        function LoadImg(url) { <br />
-    var img = new Image(); <br />
-    img.src = url; <br />
+      //获取图片地址
+        function GetOneImg(){ 
+    OneImg="https://app.haotown.cn/img/bj@"+Math.round(Math.random()*2000)+".jpg"
+     }
+        //更换图片
+    function ChangeOneImg(){
+    console.log(OneImg);//调试图片地址
+    document.getElementById("oneimg").style.backgroundImage = "url("+OneImg+")";
+    GetOneImg();
+    LoadImg(OneImg);//预先加载下一张图片
+     }
+     //预加载
+        function LoadImg(url) { 
+    var img = new Image(); 
+    img.src = url; 
     }
 </code><br>
 当然 你也可以添加一个定时函数 实现自动换壁纸 别忘记了先要执行一下换壁纸操作<br>
-<code>GetOneImg();<br />  //获取随机图片地址
-    ChangeOneImg();<br />//进行更换图片操作
+<code>GetOneImg();  //获取随机图片地址
+    ChangeOneImg();//进行更换图片操作
     setInterval(ChangeOneImg,8000);//重复更换图片</code><br>
-为了手机用户着想还可以把用以下语句判断以下<br /><code>
-if(navigator.userAgent.match(/(iPhone|iPod|Android|ios|Mobile)/i)){<br />
-     //手机用户执行代码区域<br />
-  }<br />
-    else {<br />
+为了手机用户着想还可以把用以下语句判断以下<br><code>
+if(navigator.userAgent.match(/(iPhone|iPod|Android|ios|Mobile)/i)){
+     //手机用户执行代码区域
+  }
+    else {
          
-        setInterval(ChangeOneImg,8000);//非手机用户重复更换图片  <br /> 
+        setInterval(ChangeOneImg,8000);//非手机用户重复更换图片   
         }
 </code>
 </p>
