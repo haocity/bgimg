@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="utf-8" />
+    <title>ONE IMG 一图</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/style.css" />
+    <script>thisURL = document.URL;
+      tmpimg = thisURL.split("/img.html?img=");
+      thisimg = parseInt(tmpimg[tmpimg.length - 1]);
+      if(thisimg>0&&thisimg<2200){
+      	
+      }
+      else{
+      	thisimg=1;
+      }
+      thisimgurl="https://app.haotown.cn/img/bj@"+thisimg+".jpg";
+      nextimg=thisimg+1;
+      nextimgurl="img.html?img="+nextimg;
+      lastimg=thisimg-1;
+      lastimgurl="img.html?img="+lastimg;      
+      console.log(thisimg);
+      console.log(thisimgurl);
+       console.log(nextimg);
+      console.log(nextimgurl);
+      console.log(lastimg);
+      console.log(nextimg);
+      
+     
+    </script>
+    <style>
+    .img{
+    	width: 100%;
+    }
+    a{
+    	    color: #F01515;
+    	    text-decoration: none;
+    }
+    .nextimg{
+    	float: right;
+    }
+    .small{
+    	font-size: 0.5em;
+    	        color: #3B3838;
+    	    margin-bottom: 5px;
+    }
+    </style>
+  </head>
+  
+  <body id="oneimg">
+    <div class="banner">
+      <a href="https://haotown.cn">VIEW MY BLOG</a></div>
+    <div class="header">
+      <div class="header-main">
+        <div class="title">
+          <a href="https://app.haotown.cn">
+            <img src="img/logo.png" style="
+            vertical-align: middle;width: 60px;border-radius: 50%;">一图</a>
+        </div>
+      </div>
+    </div>
+    <div class="main-wrap">
+      <div class="main">
+      	<h3>你正在观看第<script> document.write( thisimg );</script>图片</h3>
+      	
+      	
+      	<script> document.write( "<img class='img' src="+"'"+thisimgurl+"'/> ");</script>
+      	<script> document.write( "<a class='lastimg' href="+"'"+lastimgurl+"'/>上一张</a>");</script>
+     	<script> document.write( "<a class='nextimg' href="+"'"+nextimgurl+"'/>下一张</a>");</script>
+     	<!-- 多说评论框 start -->
+	
+	<script> document.write( "<div class='ds-thread' data-thread-key='"+thisimg +"' data-title='皓城壁纸' data-url='https://app.haotown.cn'></div>");</script> 
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"haotownapp"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.unstable.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+
+<!-- 多说公共JS代码 end -->
+  <SCRIPT language=javascript>
+    document.onkeydown = chang_page;
+    function chang_page() {
+        if (event.keyCode == 37 || event.keyCode == 33) location = lastimgurl;
+        if (event.keyCode == 39 || event.keyCode == 34) location = nextimgurl
+    }
+  </SCRIPT>
+  <p class="small">*支持方向键换页哦</p>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-main">一图 维护者 haocity(疯狂减肥带) 2016
+        <br />With GitHub Pages Tencent Cloud VeryCloud</div></div>
+  </body>
+
+</html>
