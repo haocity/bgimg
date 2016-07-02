@@ -31,30 +31,32 @@
 	
 <h3>如何使用？</h3>
 <p>壁纸地址 https://app.haotown.cn/img/bj@壁纸编号.jpg<br>
-你也可以使用JavaScript代码 可以替换ID为 oneimg的backgroundImage<br>
+你也可以使用JavaScript代码 可以替换ID为 oneimg的backgroundImage<br />
+这是本页面的js
+<br>
 <code> 
-      //获取图片地址
-        function GetOneImg(){ 
-    OneImg="https://app.haotown.cn/img/bj@"+Math.round(Math.random()*2000)+".jpg"
-     }
-        //更换图片
-    function ChangeOneImg(){
-    console.log(OneImg);//调试图片地址
-    document.getElementById("oneimg").style.backgroundImage = "url("+OneImg+")";
-    GetOneImg();
-    LoadImg(OneImg);//预先加载下一张图片
-     }
-     //预加载
-        function LoadImg(url) { 
-    var img = new Image(); 
-    img.src = url; 
-    }
-</code><br>
-当然 你也可以添加一个定时函数 实现自动换壁纸 别忘记了先要执行一下换壁纸操作<br>
-<code>GetOneImg();  //获取随机图片地址
-    ChangeOneImg();//进行更换图片操作
-    setInterval(ChangeOneImg,8000);//重复更换图片</code><br>
-为了手机用户着想还可以把用以下语句判断以下<br><code>
+GetOneImg();  //获取随机图片地址
+	ChangerImg();//进行更换图片操作
+	setInterval(ChangerImg,8000);//重复更换图片
+	function GetOneImg(){ 
+	OneImg="https://app.haotown.cn/img/bj@"+Math.round(Math.random()*2000)+".jpg"
+	 }
+
+	function ChangerImg(){
+	console.log(OneImg);//调试图片地址
+	document.getElementById("oneimg").style.backgroundImage = "url("+OneImg+")";
+	GetOneImg();
+	LoadImg(OneImg);//预先加载下一张图片
+	 }
+
+
+    function LoadImg(url) { 
+	var img = new Image(); 
+	img.src = url; 
+	} 
+</code><br />
+你也可以增加手机页面
+<br>
 if(navigator.userAgent.match(/(iPhone|iPod|Android|ios|Mobile)/i)){
      //手机用户执行代码区域
   }
@@ -63,6 +65,53 @@ if(navigator.userAgent.match(/(iPhone|iPod|Android|ios|Mobile)/i)){
         setInterval(ChangeOneImg,8000);//非手机用户重复更换图片   
         }
 </code>
+当然 你也可以 用cookie储存下壁纸编号 节约页面加载时间<br />
+<code> 
+function showoneimg(){
+        document.getElementById('oneimgmenu').style.display='block';
+        document.getElementById('oneimgmenuimg').style.display='none';
+    }
+    function hideoneimg(){
+        document.getElementById('oneimgmenu').style.display='none';
+        document.getElementById('oneimgmenuimg').style.display='block';
+    }
+    function getCookie(Name) {
+    var cookieName = encodeURIComponent(Name) + "=",  
+        returnvalue = "",
+        cookieStart=document.cookie.indexOf(cookieName),
+        cookieEnd=null;
+    if (cookieStart>-1) {
+        cookieEnd = document.cookie.indexOf(";",cookieStart);
+        if (cookieEnd == -1){
+            cookieEnd = document.cookie.length;
+        }
+        returnvalue=decodeURIComponent(document.cookie.substring(cookieStart+cookieName.length, cookieEnd));  
+    } 
+    return returnvalue;
+ }
+  
+window.onload=function(){
+    Bcookie=getCookie("oneimg");
+    if(Bcookie==""){
+       ChangerImg()
+    }
+    else{
+         OneImg = "https://app.haotown.cn/img/bj@" + Bcookie + ".jpg";
+         document.getElementById("oneimg").style.backgroundImage = "url(" + OneImg + ")";
+    }
+}
+function ChangerImg(){
+        OneImgnumber=Math.round(Math.random() * 2200);
+        document.cookie="oneimg="+OneImgnumber; 
+        OneImg = "https://app.haotown.cn/img/bj@" + OneImgnumber + ".jpg";
+        document.getElementById("oneimg").style.backgroundImage = "url(" + OneImg + ")";
+}
+function DownImg(){
+    window.open("https://app.haotown.cn/img.html?img=" +getCookie("oneimg"));
+}
+</code> <br />
+具体可以看下<a href="https://www.haotown.cn/archives/49.html" title="教程">教程</a>
+或者看下 <a href="testoneimg1.html" title="示例">示例页面</a>
 </p>
 <h3>关于我</h3>
 
