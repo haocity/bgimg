@@ -3,8 +3,8 @@
 使用方法（cookie带菜单版）
 1.给予要修改背景图片的标签ID="oneimg"
 2.在head标签里加入
-            <link rel="stylesheet" href="https://raw.githubusercontent.com/haocity/oneimg/gh-pages/css/oneimg-cookie.css">
-            <script src="https://raw.githubusercontent.com/haocity/oneimg/gh-pages/js/oneimg-cookie.js"></script>
+     ~<link rel="stylesheet" href="https://raw.githubusercontent.com/haocity/oneimg/gh-pages/css/oneimg-cookie.css">~
+     ~<script src="https://raw.githubusercontent.com/haocity/oneimg/gh-pages/js/oneimg-cookie.js"></script>~
 3.在body里加入
 
          <div class="changerimg" onmousemove="showoneimg()" onmouseout="hideoneimg()" onclick="hideoneimg()">
