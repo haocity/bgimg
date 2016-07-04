@@ -14,3 +14,4 @@
                   <img src="https://www.haotown.cn/b/imgdown.png" title="下载/评论图片" style="width: 70px;"   onclick="DownImg()">    
       <img src="https://www.haotown.cn/b/imgchanger.png"title="更换图片" style="width: 70px;" onclick="ChangerImg()">    
        </div>
+更多还是看看实例吧
