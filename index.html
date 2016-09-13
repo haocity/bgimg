@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+<<<<<<< HEAD
 		<meta charset="utf-8">
 		<title>HAOTOWN一图 背景图 使用实例</title>
 		<style>
@@ -16,9 +17,17 @@
     border: 2px solid #4360A0;
     cursor: pointer;
 }
+=======
+		<meta charset="utf-8" />
+		<title>ONEIMG</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+>>>>>>> origin/gh-pages
 		
-		</style>
 	</head>
+<<<<<<< HEAD
 <body id="oneimg">
 <div class="main">
 	<h1>使用实例 <input type="submit" name="button" id="button" value="ChangeImg" onclick="ChangeOneImg()" /></h1>
@@ -55,5 +64,88 @@ if(navigator.userAgent.match(/(iPhone|iPod|Android|ios|Mobile)/i)){
 </script>
 
 
+=======
+	<body>
+		<div id="oneimg-warp"></div>
+		<div id="oneimg"></div>
+		<head><nav></nav></head>
+		<div class="content-warp">
+			
+				<div class="content">
+					<div class="content-logo"><img src="img/index-logo.png" /></div>
+					<h1>ONE IMG . 一图 . Wallpaper</h1>
+					<p>The most beautiful wallpaper to your most beautiful 最美的壁纸给最美的你</p>
+					<div class="client">
+						<div class="bottom bottom1"><a id="join" href="">Join</a></div>
+						<div class="bottom bottom3"><a id="downimg" href="" download="oneimg">Down this img</a></div>
+						<div class="bottom bottom2"><a href="https://www.haotown.cn/archives/56.html">Windows client</a></div>
+						
+					</div>
+					<img class="slide" src="img/slide.png" onclick="javascript:document.getElementById('post').scrollIntoView()"/>
+				</div>
+			
+		</div>
+		<div class="post-warp">
+		<div class="post" id="post">
+			<p>这是一个小小的动漫的壁纸库 <br> 
+			虽然小却在用心<br />
+			一个无聊的小作品<br>
+			每个人都可以尽情的使用<br>
+			现在已有4358壁纸 
+			</p>
+			<p>喜欢这个项目的可以关注我的博客<a href="https://www.haotown.cn">HAOTOWN</a> <br>
+			企鹅：1051667334<br>
+			邮箱：UREYGT@GMAIL.COM<br>
+			微博：@HAOCITY<br>
+			</p>
+			<p>
+				<h2>API</h2>
+				获取图片数量<br />
+				请求方式 get<br />
+				请求地址 https://app.haotown.cn/data/<br />
+				返回 数量<br />
+				使用方法 app.haotown.cn/img/bj@图片编号.jpg<br />
+				你也可以使用 t4.haotown.cn(七牛CDN)获取图片<br />
+				以下是js教程实例<br />
+			壁纸地址 https://app.haotown.cn/img/bj@壁纸编号.jpg<br>
+你也可以使用JavaScript代码 可以替换ID为 oneimg的backgroundImage<br>
+这是一个傻瓜方式(直接引用即可)的js<br />
+直接引用后将会改变body的背景图像<br>
+<div class="bottom bottom2"><a href="js/simple.js">点我查看</a></div>
+<div class="bottom bottom2"><a href="demo/1.html">查看demo</a></div>
+<br>
+你也可以增加手机页面
+<br>
+<code>
+if(navigator.userAgent.match(/(iPhone|iPod|Android|Mobile)/i)){
+     //手机用户执行代码区域
+  }
+    else {
+         
+        setInterval(ChangeOneImg,8000);
+        }
+</code>
+当然 你也可以 用cookie储存下壁纸编号 节约页面加载时间<br> <br>
+具体可以看下<a href="https://www.haotown.cn/archives/49.html" title="教程">教程</a>
+或者看下 <a href="demo/2.html" title="示例">示例页面</a>
+</p>
+	</div>
+</div>
+		<script src="js/oneimg.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript">
+			window.onscroll = function(){
+			var warp=document.getElementById("oneimg-warp");
+		    var scrollTop = document.body.scrollTop;
+		    if(scrollTop >= 400){
+		       warp.style.backgroundColor='rgba(0,0,0,0.8)';
+   			 }
+		    else{
+		    	warp.style.backgroundColor='rgba(0,0,0,0.4)';
+		    }
+			}
+			
+		</script>
+>>>>>>> origin/gh-pages
 	</body>
 </html>
