@@ -1,70 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
-<<<<<<< HEAD
-		<meta charset="utf-8">
-		<title>HAOTOWN一图 背景图 使用实例</title>
-		<style>
-		#body{
-		background: url(img/bj@1.jpg);
-		background-size: cover;
-   		background-repeat: no-repeat;
-    		background-attachment: fixed;
-    		font: "微软雅黑";
-		}
-		input#button {
-    background-color: #379ED0;
-    border: 2px solid #4360A0;
-    cursor: pointer;
-}
-=======
 		<meta charset="utf-8" />
 		<title>ONEIMG</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="renderer" content="webkit">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
->>>>>>> origin/gh-pages
 		
 	</head>
-<<<<<<< HEAD
-<body id="oneimg">
-<div class="main">
-	<h1>使用实例 <input type="submit" name="button" id="button" value="ChangeImg" onclick="ChangeOneImg()" /></h1>
-	
-</div>
-
-<script language="javascript" type="text/javascript">
-GetOneImg();  //获取随机图片地址
-	ChangeOneImg();//进行更换图片操作
-	
-if(navigator.userAgent.match(/(iPhone|iPod|Android|ios|Mobile)/i)){
-	console.log("手机用户不循环");
-  
-}
-	else {
-		setInterval(ChangeOneImg,8000);//重复更换图片	
-		}
-	
-
-	
-	function GetOneImg(){ 
-	OneImg="https://app.haotown.cn/img/bj@"+Math.round(Math.random()*2000)+".jpg"
-	 }
-	function ChangeOneImg(){
-	console.log(OneImg);//调试图片地址
-	document.getElementById("oneimg").style.backgroundImage = "url("+OneImg+")";
-	GetOneImg();
-	LoadImg(OneImg);//预先加载下一张图片
-	 }
-    function LoadImg(url) { 
-	var img = new Image(); 
-	img.src = url; 
-	} 
-</script>
-
-
-=======
 	<body>
 		<div id="oneimg-warp"></div>
 		<div id="oneimg"></div>
@@ -146,6 +90,5 @@ if(navigator.userAgent.match(/(iPhone|iPod|Android|Mobile)/i)){
 			}
 			
 		</script>
->>>>>>> origin/gh-pages
 	</body>
 </html>
